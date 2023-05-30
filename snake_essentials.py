@@ -1,6 +1,13 @@
-# takes the parameter n as input integer
-input = int(input("Enter a number: "))
-# prints False if n is less than 100
-print(input >= 100)
-# True if n is greater than or equal to 100
-print(input >= 100)
+# Read two numbers
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+ 
+# Choose the larger number
+if number1 > number2:
+    larger_number = number1
+else:
+    larger_number = number2
+ 
+# Print the result
+print("The larger number is:", larger_number)
+ 
