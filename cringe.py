@@ -8,7 +8,7 @@ elif n=="SPATHIPHYLLUM":
 elif n=="spathiphyllum":
     print("No, I want a big Spathiphyllum!")
 else:
-    print("Spathiphyllum! Not"+ n +]!")
+    print("Spathiphyllum! Not",n +"!")
 
 
 
