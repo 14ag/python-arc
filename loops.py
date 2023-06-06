@@ -1,7 +1,8 @@
-# c=1
-# while not c:
+# c=3
+# while c:
 #     print(c)
 #     print("zero")
+#     break
 # print("done")
 
 
@@ -18,14 +19,30 @@
 # print("Well done, muggle! You are free now.")
 
 
-import time
+# import time
 
-# Write a for loop that counts to five.
-for i in range(1,6):
-    # Body of the loop - print the loop iteration number and the word "Mississippi".
-    print(i,"Mississippi")
-    # Body of the loop - use: time.sleep(1)
-    time.sleep(1)
-print("Ready or not, here I come!")
+# # Write a for loop that counts to five.
+# for i in range(1,6):
+#     # Body of the loop - print the loop iteration number and the word "Mississippi".
+#     print(i,"Mississippi")
+#     # Body of the loop - use: time.sleep(1)
+#     time.sleep(1)
+# # Write a print function with the final message.
+# print("Ready or not, here I come!")
 
-# Write a print function with the final message.
+
+largest_number = -99999999
+counter = 0
+
+while True:
+    number = int(input("the: "))
+    if number == -1:
+        break
+    counter += 1
+    if number > largest_number:
+        largest_number = number
+
+if counter != 0:
+    print("The largest ", largest_number)
+else:
+    print("You haven't")
