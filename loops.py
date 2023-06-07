@@ -31,18 +31,25 @@
 # print("Ready or not, here I come!")
 
 
-largest_number = -99999999
-counter = 0
+# largest_number = -99999999
+# counter = 0
 
-while True:
-    number = int(input("the: "))
-    if number == -1:
-        break
-    counter += 1
-    if number > largest_number:
-        largest_number = number
+# while True:
+#     number = int(input("the: "))
+#     if number == -1:
+#         break
+#     counter += 1
+#     if number > largest_number:
+#         largest_number = number
 
-if counter != 0:
-    print("The largest ", largest_number)
-else:
-    print("You haven't")
+# if counter != 0:
+#     print("The largest ", largest_number)
+# else:
+#     print("You haven't")
+
+
+# The break statement is used to exit/terminate a loop.
+
+# Design a program that uses a while loop and continuously asks the user to enter a word unless the user enters "chupacabra" as the secret exit word, in which case the message "You've successfully left the loop." should be printed to the screen, and the loop should terminate.
+
+# Don't print any of the words entered by the user. Use the concept of conditional execution and the break statement.
