@@ -1,3 +1,8 @@
+import os
+os.system('cls')
+
+
+
 # c=3
 # while c:
 #     print(c)
@@ -92,16 +97,35 @@
 
 
 
-#pyramid building blocks
-x=int(input("the"))
-y=1
-h=0
-while x>=y:
-    h+=1
-    y+=1
-    x-=y
+# #pyramid building blocks
+# x=int(input("the"))
+# y=1
+# h=0
+# while x>=y:
+#     h+=1
+#     x-=y
+#     y+=1
 
-print("h=",h)
+# print("h=",h)
+#-----------------------------------------------
+
+x=int(input("the"))
+y=0
+while x!=1:       
+    if x%2==0:
+        x/=2
+        print(x)
+    elif x%2!=0:
+        x=3*x/1
+        print(x)
+    y+=1
+print("steps=",y)
+
+
+
+
+
+
 
     
 
