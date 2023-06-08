@@ -90,14 +90,20 @@
 #------------------------------------------------------------------------------------------
 
 
-blocks_input = int(input("Enter the number of blocks: "))
-height = 0
-layer_blocks = 1
-while blocks >= layer_blocks:
-    height += 1
-    blocks -= layer_blocks
-    layer_blocks += 1
 
+
+#pyramid building blocks
+x=int(input("the"))
+y=1
+h=0
+while x>=y:
+    h+=1
+    y+=1
+    x-=y
+
+print("h=",h)
+
+    
 
 
         
