@@ -94,8 +94,8 @@
 
 #pyramid building blocks
 x=int(input("the"))
-y=1
-h=0
+y=0
+h=1
 while x>=y:
     h+=1
     y+=1
