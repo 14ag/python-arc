@@ -1,5 +1,17 @@
-x = 1
-y = 0
+x = 4
+y = 1
  
-z = ((x == y) and (x == y)) or not(x == y)
-print(not(z))
+a = x & y
+b = x | y
+c = ~x  # tricky!
+d = x ^ 5
+e = x >> 2
+f = x << 2
+ 
+print(0, 5, 3, d, e, f)
+ 
+ 
+
+x 000100  000100
+y 000001  000101 
+  000000
