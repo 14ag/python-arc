@@ -41,8 +41,8 @@ print("Step 2:", beatles)
 
 # step 3
 for i in range(2):
-    name=input("enter name")
-    beatles.append(name)
+    x=input("the")
+    beatles.append(x)
 print("Step 3:", beatles)
 
 # step 4
@@ -51,6 +51,7 @@ del beatles[-1]
 print("Step 4:", beatles)
 
 # step 5
+beatles.insert(0,"Ringo Starr")
 print("Step 5:", beatles)
 
 
