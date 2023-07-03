@@ -67,7 +67,13 @@ os.system('title lists')
 
 
 # =-=-=-=-=-=--=-=-=-=-=-=-=--==-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=--=-=-=-=-=-=-=--==-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=--=-=-=-=-=-=-=--==-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-
-my_list = [10, 8, 6, 4, 2]
-del my_list[1:3]
-print(my_list)
+my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+largest = my_list[0]
 
+for i in range(1, len(my_list)):
+    if my_list[i] > largest:
+        largest = my_list[i]
+
+print(largest)
+#second way of doing it using sort()
+print(sorted(my_list)[-1])
