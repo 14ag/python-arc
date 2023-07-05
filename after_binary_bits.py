@@ -96,7 +96,7 @@ os.system('title lists')
 my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
 #
 the=[]
-for i in range(my_list):
+for i in my_list:
     if i not in the:
         the.append(i)        
 #
