@@ -98,7 +98,8 @@ my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
 the=[]
 for i in my_list:
     if i not in the:
-        the.append(i)        
+        the.append(i)
+my_list=the[:]      
 #
 print("The list with unique elements only:")
 print(my_list)
