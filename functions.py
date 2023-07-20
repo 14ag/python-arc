@@ -12,21 +12,21 @@ os.system('prompt $G')
 
 
 
-# def x(the):
-#     var=int(input("Enter a value: "))
-#     print(the+"="+var)
-#     the=var
-# x(a)
-# x(b)
-# x(c)
+def x(the):
+    var=int(input("Enter a value: "))
+    print(the+"="+var)
+    the=var
+x(the="a")
+x(the="b")
+x(the="c")
+print(var)
 
-
-def message(number):
-    print("Enter a number:", number)
+# def message(number):
+#     print("Enter a number:", number)
  
-number = 1234
-message(1)
-print(number)
+# number = 1234
+# message(1)
+# print(number)
 
 
 
