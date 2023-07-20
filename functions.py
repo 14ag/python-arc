@@ -12,14 +12,16 @@ os.system('prompt $G')
 
 
 
-def x(the):
-    var=int(input("Enter a value: "))
-    print(the+"="+var)
-    the=var
-x(the="a")
-x(the="b")
-x(the="c")
-print(var)
+# def x(the):
+#     an=int(input("Enter a value: "))
+#     print(the+"="+str(an))
+#     the=an
+# x(the="a")
+# x(the="b")
+# x(the="c")
+# print(an)
+
+
 
 # def message(number):
 #     print("Enter a number:", number)
@@ -39,3 +41,13 @@ print(var)
 # name = input("Enter your name: ")
  
 # hello(name) # calling the function
+
+
+
+#  What is the output of the following snippet?
+
+
+def add_numbers(a, c, b=0):
+    print(a + b + c)
+ 
+add_numbers(a=1, c=3)
