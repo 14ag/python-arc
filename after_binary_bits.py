@@ -93,19 +93,39 @@ os.system('title lists')
 
 
 
-my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
-#
-the=[]
-for i in my_list:
-    if i not in the:
-        the.append(i)
-my_list=the[:]
-#
-print("The list with unique elements only:")
-print(my_list)
+# my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+# #
+# the=[]
+# for i in my_list:
+#     if i not in the:
+#         the.append(i)
+# my_list=the[:]      
+# #
+# print("The list with unique elements only:")
+# print(my_list)
 
 
 
 
 
 
+# =-=-=-=-=-=--=-=-=-=-=-=-=--==-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=--=-=-=-=-=-=-=--==-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=--=-=-=-=-=-=-=--==-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-
+for i in range(1):
+    print(i)
+else:
+    print(i)
+
+
+
+
+
+
+
+
+a = 1
+b = 0
+c = 0
+d = 1
+e = 1
+ 
+print( + d + e)
