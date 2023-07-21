@@ -53,9 +53,10 @@ os.system('prompt $G')
 # add_numbers(a=1, c=3)
 
 
-def strange_function(n):
-    if(n % 2 == 0):
-        print("t")
-        return True
-x=strange_function(2)
-print("hhhh",x)
+# def strange_function(n):
+#     if(n % 2 == 0):
+#         print("t")
+#         return True
+# x=strange_function(2)
+# print("hhhh",x)
+
