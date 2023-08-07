@@ -71,20 +71,22 @@ os.system('cls')
 #     else:
 #          return None
 
-def day_of_year(year, month, day):
-    m=[i for i in range(1,13)]
-    t=day
-    d=[0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    if month in m:
-        if (year%4==0 and not year%100==0) or year%400==0:
-            d[2]=29
-        for i in range(month):
-                t+=d[i]
-        return t
-    else:
-         return None
+# s=========================================================================================================================================================
+# def day_of_year(year, month, day):
+#     m=[i for i in range(1,13)]
+#     t=day
+#     d=[0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+#     if month in m:
+#         if (year%4==0 and not year%100==0) or year%400==0:
+#             d[2]=29
+#         for i in range(month):
+#                 t+=d[i]
+#         return t
+#     else:
+#          return None
 
-print(day_of_year(2000, 12, 31))
+# print(day_of_year(2000, 12, 31))
+# s===========================================================================================================================================================
 
 # test_data = [1900, 2000, 2016, 1987]
 # test_results = [False, True, True, False]
@@ -109,3 +111,19 @@ print(day_of_year(2000, 12, 31))
 #         print(result, "OK")
 #     else:
 #         print(result, "Failed")
+
+
+
+
+
+
+
+def is_prime(num):
+    #
+    # Write your code here.
+    #
+
+for i in range(1, 20):
+    if is_prime(i + 1):
+        print(i + 1, end=" ")
+print()
