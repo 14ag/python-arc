@@ -1,6 +1,6 @@
-# import os
-# os.system('cls')
-# os.system('prompt $G')
+import os
+os.system('cls')
+os.system('prompt $G')
 
 # # Your task is to write a pair of functions converting l/100km into mpg, and vice versa.
 
@@ -45,36 +45,49 @@
 
 # ==========================================================================================================================
 
+# #def check palindrome
+# def p(x):
+#     y=[]
+#     for i in x:
+#         y.append(i)
+#     if len(y)%2==0:
+#         n=-1
+#         for j in range(int(len(y)/2)):
+#             if y[j]==y[n]:
+#                 j+=1
+#                 n-=1
+#             else:
+#                 return False
+#         return True
+#     else:
+#         n=-1
+#         for j in range(int(len(y)//2)):
+#             if y[j]==y[n]:
+#                 j+=1
+#                 n-=1
+#             else:
+#                 return False
+#         return True
+# print(p("woow"))
+# print(p("phil"))
+# print(p("12321"))
+# print(p("12324"))
 
+
+# ===============================================================================
+#def check_duplicates
 def p(x):
     y=[]
     for i in x:
         y.append(i)
-    if len(y)%2==0:
-        n=-1
-        for j in range(int(len(y)/2)):
-            if y[j]==y[n]:
-                j+=1
-                n-=1
-            else:
-                return False
-        return True
-    else:
-        n=-1
-        for j in range(int(len(y)//2)):
-            if y[j]==y[n]:
-                j+=1
-                n-=1
-            else:
-                return False
-        return True
-
+    for j in y:
+        z=y.count(j)
+        if z>1:
+            return True
+    return False
 
 print(p("woow"))
 print(p("phil"))
-print(p("12321"))
-print(p("12324"))
-
 
 
 
