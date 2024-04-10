@@ -1,0 +1,1 @@
+in any scripting language supported by windows, i need to create a program that creates a local proxy server and then starts windows hotspot. the mobile phones connected to the hotspot, access the rest of the network through this proxy.what do i need to know
