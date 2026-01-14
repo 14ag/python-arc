@@ -87,7 +87,7 @@ def p(x):
     return False
 
 print(p("woow"))
-print(p("phil"))
+print(p("philip"))
 
 
 
