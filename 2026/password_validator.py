@@ -5,7 +5,7 @@ os.system('mode con: cols=60 lines=20')
 ################################password validator######################################
 
 #vars
-ws= " "
+ws= " " #whitespace
 password= str((input("write a password: ")))
 
 #check the password length

@@ -7,7 +7,7 @@ os.system('mode con: cols=65 lines=20')
 temps=[35, 28, 40, 31, 30, 45, 50]
 count= int(0)
 highest=int(0)
-freezing=32
+freezing=32 #freezing temp in farenheight
 
 for c in temps:
     if c >highest:

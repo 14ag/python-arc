@@ -1,7 +1,9 @@
 import os
 os.system('cls')
 os.system('prompt $G')
-######################################################################
+os.system('mode con: cols=60 lines=20')
+##############################dinner split########################################
+
 # Ask the user for the total amount of the bill (e.g., 50.00).
 food_cost= float(input("what's the total ammount?: "))
 
