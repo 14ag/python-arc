@@ -13,6 +13,6 @@ shipment = ["apples", "oranges", "apples", "apples"]
 for i in shipment:
     if i in inventory:
         inventory[i]+=1
-        print(f"one {i} was added to the inventory")
+        print(f"one {i[:-1]} was added to the inventory") #singular noun
 print("")
 print(inventory)

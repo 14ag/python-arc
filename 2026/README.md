@@ -1,4 +1,14 @@
 
+#### formating guide
+functions, classes => camelCase
+
+files, variables=> snake_case
+
+
+<br>
+<br>
+<br>
+
 # 1
 Welcome to the world of Python! After your first hour, you’ve likely learned about **variables**, **basic math**, **user input**, and perhaps how to **print** strings.
 
@@ -32,7 +42,6 @@ Write a program that helps a group of friends calculate how much each person owe
 If the bill is **$100**, the tip is **18%**, and there are **2** people, your code should output something like:
 `Each person should pay: $59.0`
 
----
 ---
 
 
@@ -89,8 +98,6 @@ Write a script that takes a string variable called `password` and determines if 
 
 # 2
 
-
-
 Excellent progress! If you've just finished your second or third hour, you’ve likely encountered **Loops** (`for` or `while`) and **Lists**.
 
 This is where Python gets really powerful—handling "collections" of data instead of just one number or string at a time.
@@ -129,7 +136,6 @@ You are given a list of daily high temperatures for a week. You need to write a 
 * Python's indentation is critical—make sure your `if` statements are indented inside your `for` loop.
 
 ---
-
 
 <br>
 <br>
@@ -232,4 +238,114 @@ After processing the shipment above, your `inventory` should look like this:
 
 In the real world, data rarely comes in a single variable. Most apps (like Instagram or Amazon) work by looping through lists of dictionaries. Mastering this "nesting" is a huge step toward building real apps.
 
-**Would you like a hint on how to handle an item in the shipment that might *not* already be in the dictionary?**
+---
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# 5
+You are making incredible time! By the sixth hour, you are likely moving beyond "how to write code" and into **"how to handle real-world data."** This usually involves **List Comprehensions** (a shorter way to write loops) or handling **Nested Data** (lists inside of lists).
+
+---
+
+## Challenge: The "Classroom Grader"
+
+### Problem Statement:
+
+You have a list of students, where each student is represented by a **list** containing their name and their test score. Your job is to "filter" this data.
+
+**Your task:**
+Create a new list called `honors_students` that contains only the **names** of students who scored **90 or higher**.
+
+### Constraints:
+
+1. **Input:** A nested list like this:
+`students = [["Alice", 95], ["Bob", 78], ["Charlie", 92], ["David", 85]]`
+2. Use a **For Loop** (or a **List Comprehension** if you’ve learned it!) to check each score.
+3. **Extract** only the name (the first element of the inner list).
+4. **Print** the final `honors_students` list.
+
+---
+
+### Key Concepts to Use:
+
+* **Double Indexing:** If `student` is `["Alice", 95]`, then `student[0]` is the name and `student[1]` is the score.
+* **List Appending:** Using `.append()` to add a name to your new list.
+* **Filtering Logic:** An `if` statement to check if the score meets the requirement.
+
+### Example Output:
+
+Based on the input above, your output should be:
+`['Alice', 'Charlie']`
+
+---
+
+### Why this is a milestone:
+
+In data science and web development, data almost always arrives in "nested" formats (like JSON). Learning how to "dig" into a list to pull out a specific piece of information is a superpower.
+
+---
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# 6
+
+You are entering the "intermediate" beginner phase! After about 7 hours of study, you are likely exploring **String Methods** and basic **Data Cleaning**. Real-world data is often "dirty" (extra spaces, mixed capitalization, or weird characters), and Python is the king of cleaning it up.
+
+---
+
+## Challenge: The "Clean Tweet Hashtags"
+
+### Problem Statement:
+
+You are building a social media tool. You are given a list of messy hashtags entered by users. You need to "clean" them so they can be stored in a database.
+
+**Your task:**
+Write a program that takes a list of strings and transforms them into a clean format.
+
+### The Rules for "Cleaning":
+
+1. **Remove** any leading or trailing whitespace.
+2. Convert everything to **lowercase**.
+3. Ensure every string **starts with** a `#`. If it doesn't have one, add it.
+4. **Skip** any strings that are empty after cleaning.
+
+### Constraints:
+
+* **Input:** `tags = ["  Python ", "coding", "#DataScience", "  ", "sql  "]`
+* **Output:** A new list: `["#python", "#coding", "#datascience", "#sql"]`
+
+---
+
+### Key Concepts to Use:
+
+* **`.strip()`**: Removes spaces from the start and end of a string.
+* **`.lower()`**: Converts the string to lowercase.
+* **`.startswith("#")`**: Checks if the first character is a hashtag.
+* **String Concatenation**: Using `"# " + tag` to add the symbol.
+
+---
+
+### Example Test:
+
+```python
+raw_tags = ["  LEARN ", "#growth", " teaching", " "]
+# Your code should result in:
+# ["#learn", "#growth", "#teaching"]
+
+```
+
+### Why this is a milestone:
+
+This is the first time you are **mutating** data (changing its form) and **filtering** data (removing the empty space) at the same time. This is the bread and butter of "Data Pre-processing."
