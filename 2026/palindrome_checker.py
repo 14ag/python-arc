@@ -11,7 +11,7 @@ def isPalindrome(s):
         print("True")
         return True
     if s[0]==s[-1]:
-        isPalindrome(s[1:-1])
+        return isPalindrome(s[1:-1])
     else:
         print("False")
         return False
