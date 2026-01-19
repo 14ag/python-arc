@@ -5,9 +5,11 @@ os.system('mode con: cols=60 lines=20')
 ##############################robust calculator########################################
 
 print("your first number will be divided by the second one")
+print("")
 
 a = int(input("input the first number: "))
 b = int(input("input the second number: "))
+print("")
 
 
 def safeDivide(a,b):

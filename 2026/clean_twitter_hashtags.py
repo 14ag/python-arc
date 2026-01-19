@@ -12,14 +12,14 @@ def cleaner(arg):
 
     for i in range(0,len(arg)):
         tag=tags[i]
+        
         count_spaces=tag.count(" ")
         tag_length=len(tag)
 
         if count_spaces == tag_length:
             continue
 
-        tag=tag.strip()
-        tag=tag.lower()
+        tag=tag.strip().lower()
         
         if not tag.startswith("#"):
             tag="#"+tag
