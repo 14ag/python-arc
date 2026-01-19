@@ -360,7 +360,7 @@ This is the first time you are **mutating** data (changing its form) and **filte
 <br>
 <br>
 
-# 6
+# 7
 
 You are absolutely crushing this! After about 8 hours of Python, you’ve likely reached the point where you need to handle **Errors and Edge Cases**. In the real world, programs crash because users enter the wrong thing or data is missing.
 
@@ -422,7 +422,7 @@ This is the shift from "writing code that works" to **"writing professional code
 <br>
 <br>
 
-# 7
+# 8
 
 You have reached a significant milestone! After about 9 hours of Python, you are ready to tackle **Efficiency** and **Frequency Counting**. In the LeetCode world, this is a very common "Easy" level pattern.
 
@@ -468,3 +468,64 @@ This is a variation of the "Single Number" problem on LeetCode. It teaches you h
 ---
 
 **learn the "Counter" tool from the Python `collections` module, or build the frequency dictionary manually**
+
+---
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# 9
+
+You are now entering your 10th hour of Python! This is usually the time when learners start exploring **Two-Pointer logic** or **List Reversal**. These techniques are the bread and butter of technical interviews.
+
+---
+
+## LeetCode Style Challenge: "The Palindrome Checker"
+
+### Problem Statement:
+
+A **palindrome** is a word or phrase that reads the same backward as forward (e.g., "madam" or "racecar").
+
+Your task is to write a function `is_palindrome(s)` that takes a string `s` and returns `True` if it is a palindrome and `False` otherwise.
+
+### Constraints:
+
+* **Input:** A string (e.g., `s = "radar"`)
+* **Output:** A Boolean (`True` or `False`).
+* **The "Hour 10" Twist:** You must ignore capitalization. "Madam" should be considered a palindrome.
+
+---
+
+### Key Concepts to Use:
+
+There are two main ways to solve this in Python. I recommend trying both!
+
+1. **The "Pythonic" Slicing Way:** You can reverse a string instantly using the "step" slice: `s[::-1]`.
+2. **The Algorithmic Way:** Compare the first character with the last, the second with the second-to-last, and so on.
+
+### Example Test Cases:
+
+| Input | Expected Output |
+| --- | --- |
+| `"Level"` | `True` |
+| `"Python"` | `False` |
+| `"stats"` | `True` |
+
+---
+
+### Why this is a milestone:
+
+On LeetCode, "Palindrome" problems are the gateway to **String Manipulation**. It forces you to think about how data is indexed. This is often the very first question asked in "screening" interviews for junior developer roles.
+
+---
+
+### Pro-Tip:
+
+Before checking if it's a palindrome, remember to use `.lower()` to make sure "L" matches "l".
+
+**Learn how the "step" slicing `[::-1]` actually works under the hood, or are you ready to write the function?**
