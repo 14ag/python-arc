@@ -15,8 +15,7 @@ def fizzBuzz(n):
             continue
         if i%5==0:
             fizzbuzz.append("Buzz")
-            continue
-        if i%3==0:
+        elif i%3==0:
             fizzbuzz.append("Fizz")
             continue
         else:

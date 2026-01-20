@@ -590,3 +590,119 @@ Write a function `fizz_buzz(n)` that returns a list of strings from **1 to n**, 
 ---
 
 **Learn why the order of your `if` and `elif` statements matters for this specific problem**
+
+---
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# 11
+
+You are moving at an impressive pace! By hour 12, you should be comfortable with list manipulation and logic. It’s time to tackle a **Search and Optimization** problem. This is a "LeetCode Easy" classic that introduces the concept of **Efficiency**.
+
+---
+
+## LeetCode Style Challenge: "The Target Sum" (Two Sum Lite)
+
+### Problem Statement:
+
+You are given a list of numbers and a **target** sum. You need to check if any two **distinct** numbers in that list add up exactly to the target.
+
+Write a function `has_target_sum(nums, target)` that returns `True` if such a pair exists, and `False` otherwise.
+
+### Constraints:
+
+* **Input:** A list of integers `nums` and an integer `target`.
+* **Output:** A Boolean (`True` or `False`).
+* **Note:** You cannot use the same element twice (e.g., if the target is 4 and the list is `[2]`, the answer is `False`).
+
+---
+
+### Key Concepts to Use:
+
+1. **Nested Loops:** You will likely need one loop inside another. The first loop picks a number, and the second loop checks all the *other* numbers to see if they add up to the target.
+2. **Indexing:** Use `range(len(nums))` to make sure you aren't comparing a number to itself.
+
+### Example Test Cases:
+
+| Input | Target | Expected Output |
+| --- | --- | --- |
+| `[1, 4, 6, 10]` | `10` | `True` (4 + 6) |
+| `[3, 2, 4]` | `6` | `True` (2 + 4) |
+| `[1, 2, 3]` | `7` | `False` |
+
+---
+
+### Why this is a milestone:
+
+This is your first encounter with **Time Complexity**.
+
+* A "Nested Loop" solution (looping inside a loop) is called ****.
+* As the list gets longer, this approach becomes very slow.
+
+Once you solve this with two loops, the next "hour" of learning will teach you how to do it much faster using a **Set** or a **Dictionary**.
+
+---
+
+**Learn how to set up the nested `range()` loops so you don't accidentally count the same number twice**
+
+
+---
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# 12
+
+
+For your **13th hour**, let's look at **Sets**. A Set in Python is like a dictionary without values; it allows you to check if an item exists almost instantly ().
+
+---
+
+## LeetCode Style Challenge: "Contains Duplicate"
+
+### Problem Statement:
+
+Given an integer array `nums`, return `True` if any value appears **at least twice** in the array, and return `False` if every element is distinct.
+
+### Constraints:
+
+* **Input:** A list of integers `nums`.
+* **Goal:** Solve this **without** using `.count()`.
+* **Hint:** Think about the properties of a `set()`. A set can only hold unique items. If you turn a list into a set, what happens to the length?
+
+---
+
+### Key Concepts to Use:
+
+1. **The `set()` function:** `my_set = set(nums)` creates a collection of only the unique numbers from the list.
+2. **Length Comparison:** If the number of items in the `set` is smaller than the number of items in the original `list`, it means there were duplicates.
+
+### Example Test Cases:
+
+| Input | Expected Output |
+| --- | --- |
+| `[1, 2, 3, 1]` | `True` |
+| `[1, 2, 3, 4]` | `False` |
+| `[1, 1, 1, 3, 3, 4]` | `True` |
+
+---
+
+### Why this is a milestone:
+
+This is the "aha!" moment for many programmers. You are learning that **choosing the right data structure** (a Set instead of a List) can make your code significantly faster and shorter. This is often solved in just 2 lines of code!
+
+---
+
+**try writing this using the `len()` comparison trick, try a "one-by-one" approach where you add numbers to a set as you loop**
+
