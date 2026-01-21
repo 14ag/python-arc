@@ -4,7 +4,6 @@ functions, classes => camelCase
 
 files, variables=> snake_case
 
-
 <br>
 <br>
 <br>
@@ -33,8 +32,6 @@ Write a program that helps a group of friends calculate how much each person owe
 * When you use `input()`, Python treats the data as a **string** (text). You will need to convert the bill and tip to a `float` (decimal number) and the number of people to an `int` (integer) to do math.
 * **The Math:** To get the tip amount, you can use the formula:
 
-
-
 ---
 
 ### Example Output:
@@ -44,12 +41,21 @@ If the bill is **$100**, the tip is **18%**, and there are **2** people, your co
 
 ---
 
-
 Great job on the first challenge! If you’ve mastered variables and basic math, your next hour is likely spent learning about **If/Else statements** (logic) and perhaps your first **List** or **String manipulation**.
 
 In "LeetCode" style, the problem focuses less on user interaction and more on a specific **logical goal** with defined inputs and outputs.
 
 ---
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# 2
 
 ## LeetCode Style Challenge: "The Password Validator"
 
@@ -85,8 +91,6 @@ Write a script that takes a string variable called `password` and determines if 
 
 ---
 
-
-
 <br>
 <br>
 <br>
@@ -96,7 +100,7 @@ Write a script that takes a string variable called `password` and determines if 
 <br>
 <br>
 
-# 2
+# 3
 
 Excellent progress! If you've just finished your second or third hour, you’ve likely encountered **Loops** (`for` or `while`) and **Lists**.
 
@@ -144,7 +148,7 @@ You are given a list of daily high temperatures for a week. You need to write a 
 <br>
 <br>
 
-# 3
+# 4
 
 You are moving fast! After about four hours of Python, you’ve likely reached one of the most important milestones in programming: **Functions**.
 
@@ -197,7 +201,8 @@ print(convert_currency(1, 0.92))    # Expected: 0    (Conversion is less than 2)
 <br>
 <br>
 
-# 4
+# 5
+
 You are flying through the fundamentals! By the fifth hour, you’ve likely encountered **Dictionaries** (key-value pairs) and perhaps how to combine them with **Lists**. This is where you move from simple variables to managing actual "data."
 
 ---
@@ -248,7 +253,8 @@ In the real world, data rarely comes in a single variable. Most apps (like Insta
 <br>
 <br>
 
-# 5
+# 6
+
 You are making incredible time! By the sixth hour, you are likely moving beyond "how to write code" and into **"how to handle real-world data."** This usually involves **List Comprehensions** (a shorter way to write loops) or handling **Nested Data** (lists inside of lists).
 
 ---
@@ -299,7 +305,7 @@ In data science and web development, data almost always arrives in "nested" form
 <br>
 <br>
 
-# 6
+# 7
 
 You are entering the "intermediate" beginner phase! After about 7 hours of study, you are likely exploring **String Methods** and basic **Data Cleaning**. Real-world data is often "dirty" (extra spaces, mixed capitalization, or weird characters), and Python is the king of cleaning it up.
 
@@ -360,7 +366,7 @@ This is the first time you are **mutating** data (changing its form) and **filte
 <br>
 <br>
 
-# 7
+# 8
 
 You are absolutely crushing this! After about 8 hours of Python, you’ve likely reached the point where you need to handle **Errors and Edge Cases**. In the real world, programs crash because users enter the wrong thing or data is missing.
 
@@ -401,7 +407,6 @@ print(safe_divide(10, 0))    # Expected: "Error: Cannot divide by zero."
 print(safe_divide(10, "5"))  # Expected: "Error: Inputs must be numbers."
 
 ```
-
 ---
 
 ### Why this is a milestone:
@@ -422,7 +427,7 @@ This is the shift from "writing code that works" to **"writing professional code
 <br>
 <br>
 
-# 8
+# 9
 
 You have reached a significant milestone! After about 9 hours of Python, you are ready to tackle **Efficiency** and **Frequency Counting**. In the LeetCode world, this is a very common "Easy" level pattern.
 
@@ -479,7 +484,7 @@ This is a variation of the "Single Number" problem on LeetCode. It teaches you h
 <br>
 <br>
 
-# 9
+# 10
 
 You are now entering your 10th hour of Python! This is usually the time when learners start exploring **Two-Pointer logic** or **List Reversal**. These techniques are the bread and butter of technical interviews.
 
@@ -530,7 +535,6 @@ Before checking if it's a palindrome, remember to use `.lower()` to make sure "L
 
 **Learn how the "step" slicing `[::-1]` actually works under the hood, or are you ready to write the function**
 
-
 ---
 <br>
 <br>
@@ -541,7 +545,7 @@ Before checking if it's a palindrome, remember to use `.lower()` to make sure "L
 <br>
 <br>
 
-# 10
+# 11
 
 You have officially hit the **double-digit hours** mark! By hour 11, you should be comfortable with list indexing, loops, and basic logic. Now it's time to introduce **Array Transformation**—a common pattern where you modify a list based on specific rules.
 
@@ -601,7 +605,7 @@ Write a function `fizz_buzz(n)` that returns a list of strings from **1 to n**, 
 <br>
 <br>
 
-# 11
+# 12
 
 You are moving at an impressive pace! By hour 12, you should be comfortable with list manipulation and logic. It’s time to tackle a **Search and Optimization** problem. This is a "LeetCode Easy" classic that introduces the concept of **Efficiency**.
 
@@ -651,7 +655,6 @@ Once you solve this with two loops, the next "hour" of learning will teach you h
 
 **Learn how to set up the nested `range()` loops so you don't accidentally count the same number twice**
 
-
 ---
 <br>
 <br>
@@ -662,8 +665,7 @@ Once you solve this with two loops, the next "hour" of learning will teach you h
 <br>
 <br>
 
-# 12
-
+# 13
 
 For your **13th hour**, let's look at **Sets**. A Set in Python is like a dictionary without values; it allows you to check if an item exists almost instantly ().
 
@@ -706,7 +708,6 @@ This is the "aha!" moment for many programmers. You are learning that **choosing
 
 **try writing this using the `len()` comparison trick, try a "one-by-one" approach where you add numbers to a set as you loop**
 
-
 ---
 <br>
 <br>
@@ -717,7 +718,7 @@ This is the "aha!" moment for many programmers. You are learning that **choosing
 <br>
 <br>
 
-# 13
+# 14
 
 You’ve officially unlocked **Set Theory**! Using `set()` to handle duplicates is a professional-grade optimization.
 
@@ -765,9 +766,6 @@ This problem introduces **Stable Filtering**. You are learning how to extract sp
 
 ---
 
-
-
-
 <br>
 <br>
 <br>
@@ -777,7 +775,7 @@ This problem introduces **Stable Filtering**. You are learning how to extract sp
 <br>
 <br>
 
-# 14
+# 15
 
 You are now at **Hour 15**, and you’ve mastered basic filtering and set-based optimization. Now, it's time to learn how to **search for a specific pattern** within a collection. This is a "LeetCode Easy" classic that introduces **Two-Pointer Logic**.
 
@@ -823,3 +821,65 @@ This is your first **Two-Pointer** problem. Instead of comparing two items in th
 ---
 
 **Learn how to handle the "IndexError" that might happen if you move your pointer past the end of string `s`, or are you ready to code**
+
+---
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# 16
+
+You’ve reached **Hour 16**! You’ve shown you can handle two-pointer logic and array transformations. Now, we are going to test your ability to **manage state** and **handle logic shifts** within a single loop.
+
+This is a classic "String Processing" problem that mimics how computers read documents.
+
+---
+
+## LeetCode Style Challenge: "Length of Last Word"
+
+### Problem Statement:
+
+Given a string `s` consisting of words and spaces, return the length of the **last** word in the string.
+
+A **word** is defined as a maximal substring consisting of non-space characters only.
+
+### Constraints:
+
+* **Input:** A string `s` (e.g., `s = "Hello World  "`)
+* **Output:** An integer (e.g., `5`)
+* **The Twist:** The string may contain leading or trailing spaces. You must ignore these and find the length of the actual final word.
+
+---
+
+### Example Test Cases:
+
+| Input | Expected Output | Explanation |
+| --- | --- | --- |
+| `"Hello World"` | `5` | Last word is "World" |
+| `"   fly me   to   the moon  "` | `4` | Last word is "moon" |
+| `"luffy is still joyboy"` | `6` | Last word is "joyboy" |
+
+---
+
+### Why this is a milestone:
+
+In earlier hours, you learned how to use `.strip()` and `.split()`. While those are great tools, solving this problem algorithmically (without just turning the whole thing into a list) forces you to think about **direction**.
+
+Do you start from the beginning of the string, or would it be more efficient to start from the end?
+
+---
+
+### Your Objective:
+
+Try to solve this without using the `.split()` method. Aim to look at the characters one by one. Think about:
+
+1. How do I ignore the spaces at the very end?
+2. Once I hit a letter, how do I know when the word has ended?
+
+**Learn "Reverse Iteration" in Python**
