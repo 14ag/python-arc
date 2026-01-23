@@ -5,17 +5,22 @@ os.system('mode con: cols=60 lines=20')
 ##############################find lucky integer########################################
 
 def findLuckyInteger(arr):
+    largest_lucky=-1
     frequency={}
     for i in arr:
-        if arr.count(i)==i:
-            frequency[i]=arr.count(i)
-            
-    if len(frequency)>0:
-        return max(frequency)
-    else:
-        return -1
-        
+        if not i in frequency:
+            frequency[i]=1
+        elif i in frequency:
+            frequency[i]+=1
+   # print(frequency)
 
+    for key,value in frequency.items():
+        if key==value and key>largest_lucky:
+            largest_lucky=key
+            
+    
+    return largest_lucky
+        
 
 
 print(findLuckyInteger([2, 2, 3, 4]))
