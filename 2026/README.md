@@ -1301,8 +1301,69 @@ But here’s the thing: if you start from the **end** of the list and walk **bac
 * Update `max_so_far` to be whichever is bigger: the old `max_so_far` or the temporary variable you saved.
 
 
-4. Return the modified array.
+1. Return the modified array.
 
 The reality is that "reverse thinking" is a common trick to optimize code. It prevents you from recalculating the same "max" over and over again.
 
 **Learn how to use `range(len(arr) - 1, -1, -1)` to loop backward, or figure out the `reversed()` function**
+
+---
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# 24
+
+This is a **String Logic** and **Frequency** challenge. It’s a favorite for testing how well you can coordinate different data points.
+
+---
+
+## LeetCode Style Challenge: "Ransom Note"
+
+### Problem Statement:
+
+You are given two strings: `ransomNote` and `magazine`.
+
+You need to determine if the `ransomNote` can be constructed by using the letters from `magazine`. Each letter in `magazine` can only be used **once** in your `ransomNote`.
+
+Return `True` if it can be constructed, otherwise return `False`.
+
+### Constraints:
+
+* **Input:** Two strings, `ransomNote` and `magazine`.
+* **Output:** A Boolean.
+* **The Rule:** If your note needs two 'a's, the magazine must have at least two 'a's.
+
+---
+
+### Example Test Cases:
+
+| ransomNote | magazine | Expected Output |
+| --- | --- | --- |
+| `"a"` | `"b"` | `False` |
+| `"aa"` | `"ab"` | `False` |
+| `"aa"` | `"aab"` | `True` |
+
+---
+
+### Why this is a milestone:
+
+This isn't about finding a single number or reversing a list. It's about **inventory management**. You have a "demand" (the note) and a "supply" (the magazine). Your code has to verify if the supply can meet every single demand.
+
+The reality is that this logic is identical to checking if an order can be fulfilled from a warehouse or if a user has enough permissions to perform an action. You have to compare two separate sets of counts.
+
+---
+
+### Your Objective:
+
+Figure out how to track the counts of letters in both strings. If the note requires more of any character than the magazine provides, the whole thing fails.
+
+I'm not going to tell you whether to use a dictionary, a list of 26 integers, or a set. That's on you.
+
+**Do you want to see the test cases for a very long string to check your performance, or are you going straight to the code?**
