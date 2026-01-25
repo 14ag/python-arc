@@ -1549,3 +1549,60 @@ But here's the thing: most beginners try to use `.remove()` or `.pop()` inside a
 The reality is that memory is expensive. In embedded systems or massive databases, you don't get to just "make a copy" of your data. You have to fix it where it sits.
 
 **Learn handle the pointer logic, or remember why `for i in range(len(nums))` is safer than `for x in nums` when you're modifying the index**
+
+---
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# 28
+
+The previous task was about removing elements. This task is about **merging** and **sorting** without using the built-in `.sort()` method.
+
+---
+
+## LeetCode Challenge: Merge Sorted Array (In-Place)
+
+### The Goal
+
+You are given two integer arrays, `nums1` and `nums2`, each sorted in non-decreasing order. You are also given two integers, `m` and `n`, representing the number of actual elements in `nums1` and `nums2` respectively.
+
+Merge `nums2` into `nums1` as one sorted array.
+
+### The Task
+
+1. **Modify `nums1` in-place.** 2.  `nums1` has a total length of `m + n`. The first `m` elements are the data, and the last `n` elements are set to `0` (serving as empty placeholders for `nums2`).
+2. Combine them so that the final `nums1` is sorted.
+
+### Constraints
+
+* **Do not return a new list.** * **Do not use `nums1.sort()`.**
+* **Efficiency:** Aim for  time complexity.
+
+---
+
+### Example Test Case
+
+**Input:** `nums1 = [1, 2, 3, 0, 0, 0]`, `m = 3`
+`nums2 = [2, 5, 6]`, `n = 3`
+
+**Output:** `nums1` becomes `[1, 2, 2, 3, 5, 6]`
+
+---
+
+### Implementation Detail
+
+Since `nums1` has empty space at the **back**, it is often more efficient to compare the largest numbers from both lists and fill `nums1` from the **end** to the **front**. This prevents you from overwriting your own data as you move.
+
+1. Start a pointer at the end of the data in `nums1` (index ).
+2. Start a pointer at the end of `nums2` (index ).
+3. Start a "write" pointer at the very end of `nums1` (index ).
+4. Compare the values and place the larger one at the write pointer.
+
+ 
