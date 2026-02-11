@@ -1,31 +1,29 @@
-You are entering the "intermediate" beginner phase After about 7 hours of study, you are likely exploring **String Methods** and basic **Data Cleaning**. Real-world data is often "dirty" (extra spaces, mixed capitalization, or weird characters), and Python is the king of cleaning it up.
+You are now entering your 10th hour of Python This is usually the time when learners start exploring **Two-Pointer logic** or **List Reversal**. These techniques are the bread and butter of technical interviews.
 ---
-## Challenge: The "Clean Tweet Hashtags"
+## LeetCode Style Challenge: "The Palindrome Checker"
 ### Problem Statement:
-You are building a social media tool. You are given a list of messy hashtags entered by users. You need to "clean" them so they can be stored in a database.
-**Your task:**
-Write a program that takes a list of strings and transforms them into a clean format.
-### The Rules for "Cleaning":
-1. **Remove** any leading or trailing whitespace.
-2. Convert everything to **lowercase**.
-3. Ensure every string **starts with** a `#`. If it doesn't have one, add it.
-4. **Skip** any strings that are empty after cleaning.
+A **palindrome** is a word or phrase that reads the same backward as forward (e.g., "madam" or "racecar").
+Your task is to write a function `is_palindrome(s)` that takes a string `s` and returns `True` if it is a palindrome and `False` otherwise.
 ### Constraints:
-* **Input:** `tags = ["  Python ", "coding", "#DataScience", "  ", "sql  "]`
-* **Output:** A new list: `["#python", "#coding", "#datascience", "#sql"]`
+* **Input:** A string (e.g., `s = "radar"`)
+* **Output:** A Boolean (`True` or `False`).
+* **The "Hour 10" Twist:** You must ignore capitalization. "Madam" should be considered a palindrome.
 ---
 ### Key Concepts to Use:
-* **`.strip()`**: Removes spaces from the start and end of a string.
-* **`.lower()`**: Converts the string to lowercase.
-* **`.startswith("#")`**: Checks if the first character is a hashtag.
-* **String Concatenation**: Using `"# " + tag` to add the symbol.
+There are two main ways to solve this in Python. I recommend trying both
+1. **The "Pythonic" Slicing Way:** You can reverse a string instantly using the "step" slice: `s[::-1]`.
+2. **The Algorithmic Way:** Compare the first character with the last, the second with the second-to-last, and so on.
+### Example Test Cases:
+| Input | Expected Output |
+| --- | --- |
+| `"Level"` | `True` |
+| `"Python"` | `False` |
+| `"stats"` | `True` |
 ---
-### Example Test:
-```python
-raw_tags = ["  LEARN ", "#growth", " teaching", " "]
-# Your code should result in:
-# ["#learn", "#growth", "#teaching"]
-```
 ### Why this is a milestone:
-This is the first time you are **mutating** data (changing its form) and **filtering** data (removing the empty space) at the same time. This is the bread and butter of "Data Pre-processing."
+On LeetCode, "Palindrome" problems are the gateway to **String Manipulation**. It forces you to think about how data is indexed. This is often the very first question asked in "screening" interviews for junior developer roles.
+---
+### Pro-Tip:
+Before checking if it's a palindrome, remember to use `.lower()` to make sure "L" matches "l".
+**Learn how the "step" slicing `[::-1]` actually works under the hood, or are you ready to write the function**
 ---
