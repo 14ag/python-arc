@@ -1,31 +1,28 @@
-You are entering the "intermediate" beginner phase After about 7 hours of study, you are likely exploring **String Methods** and basic **Data Cleaning**. Real-world data is often "dirty" (extra spaces, mixed capitalization, or weird characters), and Python is the king of cleaning it up.
+You are now at **Hour 15**, and you’ve mastered basic filtering and set-based optimization. Now, it's time to learn how to **search for a specific pattern** within a collection. This is a "LeetCode Easy" classic that introduces **Two-Pointer Logic**.
 ---
-## Challenge: The "Clean Tweet Hashtags"
+## LeetCode Style Challenge: "Is Subsequence"
 ### Problem Statement:
-You are building a social media tool. You are given a list of messy hashtags entered by users. You need to "clean" them so they can be stored in a database.
-**Your task:**
-Write a program that takes a list of strings and transforms them into a clean format.
-### The Rules for "Cleaning":
-1. **Remove** any leading or trailing whitespace.
-2. Convert everything to **lowercase**.
-3. Ensure every string **starts with** a `#`. If it doesn't have one, add it.
-4. **Skip** any strings that are empty after cleaning.
+Given two strings `s` and `t`, return `True` if `s` is a **subsequence** of `t`, or `False` otherwise.
+A **subsequence** of a string is a new string formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `"ace"` is a subsequence of `"abcde"` while `"aec"` is not).
 ### Constraints:
-* **Input:** `tags = ["  Python ", "coding", "#DataScience", "  ", "sql  "]`
-* **Output:** A new list: `["#python", "#coding", "#datascience", "#sql"]`
+* **Input:** Two strings, `s` and `t`.
+* **Output:** A Boolean (`True` or `False`).
+* **Goal:** Use a loop to "walk" through string `t` and see if you can find the characters of `s` in order.
 ---
 ### Key Concepts to Use:
-* **`.strip()`**: Removes spaces from the start and end of a string.
-* **`.lower()`**: Converts the string to lowercase.
-* **`.startswith("#")`**: Checks if the first character is a hashtag.
-* **String Concatenation**: Using `"# " + tag` to add the symbol.
+1. **The Pointer Method:** Create a variable `i = 0` to track your position in string `s`.
+2. **The Main Loop:** Loop through every character in string `t`.
+3. **The Match:** If the current character in `t` matches `s[i]`, move your pointer `i` forward by 1.
+4. **The Finish Line:** If `i` ever becomes equal to the length of `s`, it means you found all the characters in order
+### Example Test Cases:
+| Input s | Input t | Expected Output |
+| --- | --- | --- |
+| `"abc"` | `"ahbgdc"` | `True` |
+| `"axc"` | `"ahbgdc"` | `False` (Missing 'x') |
+| `"ace"` | `"abcde"` | `True` |
 ---
-### Example Test:
-```python
-raw_tags = ["  LEARN ", "#growth", " teaching", " "]
-# Your code should result in:
-# ["#learn", "#growth", "#teaching"]
-```
 ### Why this is a milestone:
-This is the first time you are **mutating** data (changing its form) and **filtering** data (removing the empty space) at the same time. This is the bread and butter of "Data Pre-processing."
+This is your first **Two-Pointer** problem. Instead of comparing two items in the *same* list, you are coordinating movement across *two different* strings. This logic is used in everything from DNA sequencing to search engine "auto-complete" features.
+---
+**Learn how to handle the "IndexError" that might happen if you move your pointer past the end of string `s`, or are you ready to code**
 ---
