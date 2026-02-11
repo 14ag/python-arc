@@ -1,26 +1,25 @@
-You are moving fast **Functions**.
-Functions allow you to wrap your code into reusable "tools" so you don't have to write the same logic over and over.
+You are flying through the fundamentals By the fifth hour, you’ve likely encountered **Dictionaries** (key-value pairs) and perhaps how to combine them with **Lists**. This is where you move from simple variables to managing actual "data."
 ---
-## Challenge: The "Currency Converter Function"
+## Challenge: The "Inventory Manager"
 ### Problem Statement:
-Imagine you are building a travel app. You need a function that converts **USD** to **Euros**, but it also needs to subtract a small **transaction fee**.
+You are managing a small grocery store. You have a **Dictionary** where the **key** is the name of the fruit and the **value** is the quantity currently in stock.
 **Your task:**
-Create a function called `convert_currency` that:
-1. Takes two **parameters**: `amount` (USD) and `rate` (the exchange rate).
-2. Calculates the converted amount: .
-3. Subtracts a **flat fee of ** from the final result.
-4. **Returns** the final value.
+Write a program that takes an inventory dictionary and a "restock" list. It should update the quantities in the dictionary based on the list.
 ### Constraints:
-* If the result of the conversion is less than , the function should return `0` (because the fee covers the whole amount).
-* You must use the `return` keyword.
+1. Start with this dictionary: `inventory = {"apples": 5, "bananas": 12, "oranges": 0}`
+2. You are given a list of items that just arrived: `shipment = ["apples", "oranges", "apples", "apples"]`
+3. **Loop** through the `shipment` list.
+4. For every item in the shipment, **increase** its count in the `inventory` dictionary by 1.
+5. **Print** the final dictionary.
 ---
-### Example Test Cases:
-```python
-# Calling your function should look like this:
-print(convert_currency(100, 0.92))  # Expected: 90.0 (100 * 0.92 - 2)
-print(convert_currency(1, 0.92))    # Expected: 0    (Conversion is less than 2)
-```
-### Why this is the "Next Level":
-* **Scope:** Variables created inside a function stay inside the function.
-* **Return vs. Print:** This is a common point of confusion. `print()` shows a value to the human, but `return` gives the value back to the computer to use in other calculations.
+### Key Concepts to Use:
+* **Dictionary Access:** How to get or update a value using its key (e.g., `inventory["apples"] += 1`).
+* **Membership Checking:** Using `if item in inventory:` to make sure you don't try to update a fruit that isn't in your store.
+* **Nested Logic:** Using a `for` loop to go through the list, and an `if` statement inside that loop to update the dictionary.
+### Example Output:
+After processing the shipment above, your `inventory` should look like this:
+`{'apples': 8, 'bananas': 12, 'oranges': 1}`
+---
+### Why this is a milestone:
+In the real world, data rarely comes in a single variable. Most apps (like Instagram or Amazon) work by looping through lists of dictionaries. Mastering this "nesting" is a huge step toward building real apps.
 ---
