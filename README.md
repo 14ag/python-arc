@@ -1,31 +1,26 @@
-You are entering the "intermediate" beginner phase After about 7 hours of study, you are likely exploring **String Methods** and basic **Data Cleaning**. Real-world data is often "dirty" (extra spaces, mixed capitalization, or weird characters), and Python is the king of cleaning it up.
+For **Hour 21**, we're moving into **String Compression**. This is how zip files and image formats actually work under the hood.
 ---
-## Challenge: The "Clean Tweet Hashtags"
+## LeetCode Style Challenge: "Check if All Characters Have Equal Occurrences"
 ### Problem Statement:
-You are building a social media tool. You are given a list of messy hashtags entered by users. You need to "clean" them so they can be stored in a database.
-**Your task:**
-Write a program that takes a list of strings and transforms them into a clean format.
-### The Rules for "Cleaning":
-1. **Remove** any leading or trailing whitespace.
-2. Convert everything to **lowercase**.
-3. Ensure every string **starts with** a `#`. If it doesn't have one, add it.
-4. **Skip** any strings that are empty after cleaning.
+Given a string `s`, return `True` if all characters that appear in `s` have the **same number of occurrences**, and `False` otherwise.
 ### Constraints:
-* **Input:** `tags = ["  Python ", "coding", "#DataScience", "  ", "sql  "]`
-* **Output:** A new list: `["#python", "#coding", "#datascience", "#sql"]`
+* **Input:** A string (e.g., `"abacbc"`).
+* **Output:** Boolean.
+* **The Goal:** Don't use `.count()` inside a loop. Count everything once first.
+### Example Test Cases:
+| Input | Expected Output | Explanation |
+| --- | --- | --- |
+| `"abacbc"` | `True` | 'a', 'b', and 'c' all appear 2 times. |
+| `"aaabb"` | `False` | 'a' appears 3 times, 'b' appears 2 times. |
+| `"abcde"` | `True` | Everything appears exactly once. |
 ---
-### Key Concepts to Use:
-* **`.strip()`**: Removes spaces from the start and end of a string.
-* **`.lower()`**: Converts the string to lowercase.
-* **`.startswith("#")`**: Checks if the first character is a hashtag.
-* **String Concatenation**: Using `"# " + tag` to add the symbol.
----
-### Example Test:
-```python
-raw_tags = ["  LEARN ", "#growth", " teaching", " "]
-# Your code should result in:
-# ["#learn", "#growth", "#teaching"]
-```
 ### Why this is a milestone:
-This is the first time you are **mutating** data (changing its form) and **filtering** data (removing the empty space) at the same time. This is the bread and butter of "Data Pre-processing."
+You are learning to validate the **uniformity** of a dataset. In your last solution, you used the dictionary keys to find the "lucky" number. Here, you need to look at the dictionary **values**.
+The reality is that once you have the counts, you don't care about the letters anymore. You just care if all the numbers in that dictionary are the same.
+---
+### Your Objective:
+1. Loop through the string once to build a frequency dictionary (count the letters).
+2. Get all the values from that dictionary (the counts).
+3. Check if all those counts are equal.
+**But here’s the thing:** There is a trick using a `set()` that can tell you if all values in a list are the same in one single line. Do you want to figure that out, or do you want to use a loop to compare the counts manually?
 ---
