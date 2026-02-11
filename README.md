@@ -1,31 +1,28 @@
-You are entering the "intermediate" beginner phase After about 7 hours of study, you are likely exploring **String Methods** and basic **Data Cleaning**. Real-world data is often "dirty" (extra spaces, mixed capitalization, or weird characters), and Python is the king of cleaning it up.
+This is a **String Logic** and **Frequency** challenge. It’s a favorite for testing how well you can coordinate different data points.
 ---
-## Challenge: The "Clean Tweet Hashtags"
+## LeetCode Style Challenge: "Ransom Note"
 ### Problem Statement:
-You are building a social media tool. You are given a list of messy hashtags entered by users. You need to "clean" them so they can be stored in a database.
-**Your task:**
-Write a program that takes a list of strings and transforms them into a clean format.
-### The Rules for "Cleaning":
-1. **Remove** any leading or trailing whitespace.
-2. Convert everything to **lowercase**.
-3. Ensure every string **starts with** a `#`. If it doesn't have one, add it.
-4. **Skip** any strings that are empty after cleaning.
+You are given two strings: `ransomNote` and `magazine`.
+You need to determine if the `ransomNote` can be constructed by using the letters from `magazine`. Each letter in `magazine` can only be used **once** in your `ransomNote`.
+Return `True` if it can be constructed, otherwise return `False`.
 ### Constraints:
-* **Input:** `tags = ["  Python ", "coding", "#DataScience", "  ", "sql  "]`
-* **Output:** A new list: `["#python", "#coding", "#datascience", "#sql"]`
+* **Input:** Two strings, `ransomNote` and `magazine`.
+* **Output:** A Boolean.
+* **The Rule:** If your note needs two 'a's, the magazine must have at least two 'a's.
 ---
-### Key Concepts to Use:
-* **`.strip()`**: Removes spaces from the start and end of a string.
-* **`.lower()`**: Converts the string to lowercase.
-* **`.startswith("#")`**: Checks if the first character is a hashtag.
-* **String Concatenation**: Using `"# " + tag` to add the symbol.
+### Example Test Cases:
+| ransomNote | magazine | Expected Output |
+| --- | --- | --- |
+| `"a"` | `"b"` | `False` |
+| `"aa"` | `"ab"` | `False` |
+| `"aa"` | `"aab"` | `True` |
 ---
-### Example Test:
-```python
-raw_tags = ["  LEARN ", "#growth", " teaching", " "]
-# Your code should result in:
-# ["#learn", "#growth", "#teaching"]
-```
 ### Why this is a milestone:
-This is the first time you are **mutating** data (changing its form) and **filtering** data (removing the empty space) at the same time. This is the bread and butter of "Data Pre-processing."
+This isn't about finding a single number or reversing a list. It's about **inventory management**. You have a "demand" (the note) and a "supply" (the magazine). Your code has to verify if the supply can meet every single demand.
+The reality is that this logic is identical to checking if an order can be fulfilled from a warehouse or if a user has enough permissions to perform an action. You have to compare two separate sets of counts.
+---
+### Your Objective:
+Figure out how to track the counts of letters in both strings. If the note requires more of any character than the magazine provides, the whole thing fails.
+I'm not going to tell you whether to use a dictionary, a list of 26 integers, or a set. That's on you.
+**Do you want to see the test cases for a very long string to check your performance, or are you going straight to the code?**
 ---
