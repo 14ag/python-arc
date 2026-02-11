@@ -1,31 +1,27 @@
-You are entering the "intermediate" beginner phase After about 7 hours of study, you are likely exploring **String Methods** and basic **Data Cleaning**. Real-world data is often "dirty" (extra spaces, mixed capitalization, or weird characters), and Python is the king of cleaning it up.
+Hour 25. You're deep enough into this that you don't need a map. You just need the problem.
+This one is about **Pattern Matching**. It’s a step up from the Ransom Note because the relationship isn't just about "having enough letters"—it’s about the **structure** of the data.
 ---
-## Challenge: The "Clean Tweet Hashtags"
+## LeetCode Style Challenge: "Isomorphic Strings"
 ### Problem Statement:
-You are building a social media tool. You are given a list of messy hashtags entered by users. You need to "clean" them so they can be stored in a database.
-**Your task:**
-Write a program that takes a list of strings and transforms them into a clean format.
-### The Rules for "Cleaning":
-1. **Remove** any leading or trailing whitespace.
-2. Convert everything to **lowercase**.
-3. Ensure every string **starts with** a `#`. If it doesn't have one, add it.
-4. **Skip** any strings that are empty after cleaning.
+Two strings `s` and `t` are **isomorphic** if the characters in `s` can be replaced to get `t`.
+All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same replacement character, but a character may map to itself.
 ### Constraints:
-* **Input:** `tags = ["  Python ", "coding", "#DataScience", "  ", "sql  "]`
-* **Output:** A new list: `["#python", "#coding", "#datascience", "#sql"]`
+* **Input:** Two strings, `s` and `t`.
+* **Output:** Boolean (`True` or `False`).
+* **Requirement:** The mapping must be consistent. If 'a' maps to 'x' once, it must always map to 'x'. And 'b' cannot also map to 'x'.
 ---
-### Key Concepts to Use:
-* **`.strip()`**: Removes spaces from the start and end of a string.
-* **`.lower()`**: Converts the string to lowercase.
-* **`.startswith("#")`**: Checks if the first character is a hashtag.
-* **String Concatenation**: Using `"# " + tag` to add the symbol.
+### Example Test Cases:
+| Input `s` | Input `t` | Expected Output | Explanation |
+| --- | --- | --- | --- |
+| `"egg"` | `"add"` | `True` | 'e' -> 'a', 'g' -> 'd' |
+| `"foo"` | `"bar"` | `False` | 'o' cannot map to both 'a' and 'r' |
+| `"paper"` | `"title"` | `True` | Consistent 1-to-1 mapping |
+| `"badc"` | `"baba"` | `False` | 'd' and 'c' both try to map to 'a' |
 ---
-### Example Test:
-```python
-raw_tags = ["  LEARN ", "#growth", " teaching", " "]
-# Your code should result in:
-# ["#learn", "#growth", "#teaching"]
-```
 ### Why this is a milestone:
-This is the first time you are **mutating** data (changing its form) and **filtering** data (removing the empty space) at the same time. This is the bread and butter of "Data Pre-processing."
+This is your first encounter with **Bi-directional Mapping**. It’s not enough to know that "A becomes B." You also have to ensure that "B only comes from A."
+The reality is that this is how basic encryption and substitution ciphers work. If your logic is leaky, the "code" breaks. You have to track relationships, not just counts.
+---
+### Your Objective:
+Figure out how to maintain a record of which character "belongs" to which. If you hit a contradiction—where a character is already promised to something else—you've failed the isomorphism test.
 ---
