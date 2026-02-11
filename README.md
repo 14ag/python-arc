@@ -1,31 +1,27 @@
-You are entering the "intermediate" beginner phase After about 7 hours of study, you are likely exploring **String Methods** and basic **Data Cleaning**. Real-world data is often "dirty" (extra spaces, mixed capitalization, or weird characters), and Python is the king of cleaning it up.
+You have reached a significant milestone After about 9 hours of Python, you are ready to tackle **Efficiency** and **Frequency Counting**. In the LeetCode world, this is a very common "Easy" level pattern.
+This challenge moves away from just "cleaning" data and into **algorithmic thinking**.
 ---
-## Challenge: The "Clean Tweet Hashtags"
+## LeetCode Style Challenge: "Find the Lone Survivor"
 ### Problem Statement:
-You are building a social media tool. You are given a list of messy hashtags entered by users. You need to "clean" them so they can be stored in a database.
-**Your task:**
-Write a program that takes a list of strings and transforms them into a clean format.
-### The Rules for "Cleaning":
-1. **Remove** any leading or trailing whitespace.
-2. Convert everything to **lowercase**.
-3. Ensure every string **starts with** a `#`. If it doesn't have one, add it.
-4. **Skip** any strings that are empty after cleaning.
+You are given a list of integers where every number appears **exactly twice**, except for one number which appears **only once**.
+Your goal is to find that single, unique number.
 ### Constraints:
-* **Input:** `tags = ["  Python ", "coding", "#DataScience", "  ", "sql  "]`
-* **Output:** A new list: `["#python", "#coding", "#datascience", "#sql"]`
+* **Input:** A list of integers (e.g., `nums = [2, 4, 6, 2, 4]`)
+* **Output:** The integer that appears only once (e.g., `6`)
+* **Goal:** Solve this using a **Dictionary** to count occurrences.
 ---
 ### Key Concepts to Use:
-* **`.strip()`**: Removes spaces from the start and end of a string.
-* **`.lower()`**: Converts the string to lowercase.
-* **`.startswith("#")`**: Checks if the first character is a hashtag.
-* **String Concatenation**: Using `"# " + tag` to add the symbol.
+* **Frequency Mapping:** Create an empty dictionary. Loop through the list. If the number is already in the dictionary, increase its value. If not, add it with a value of 1.
+* **Dictionary Iteration:** After the loop is finished, use `.items()` to loop through your dictionary and find the key that has a value of `1`.
+### Example Test Cases:
+| Input | Expected Output |
+| --- | --- |
+| `[1, 1, 2, 2, 3]` | `3` |
+| `[10, 5, 10]` | `5` |
+| `[9, 8, 7, 8, 9]` | `7` |
 ---
-### Example Test:
-```python
-raw_tags = ["  LEARN ", "#growth", " teaching", " "]
-# Your code should result in:
-# ["#learn", "#growth", "#teaching"]
-```
-### Why this is a milestone:
-This is the first time you are **mutating** data (changing its form) and **filtering** data (removing the empty space) at the same time. This is the bread and butter of "Data Pre-processing."
+### Why this is a LeetCode classic:
+This is a variation of the "Single Number" problem on LeetCode. It teaches you how to use a **Hash Map** (which is what a Python Dictionary is) to optimize searching. Searching a dictionary is much faster than searching a list over and over again.
+---
+**learn the "Counter" tool from the Python `collections` module, or build the frequency dictionary manually**
 ---
