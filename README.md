@@ -1,23 +1,26 @@
-Excellent progress If you've just finished your second or third hour, you’ve likely encountered **Loops** (`for` or `while`) and **Lists**.
-This is where Python gets really powerful—handling "collections" of data instead of just one number or string at a time.
+You are moving fast **Functions**.
+Functions allow you to wrap your code into reusable "tools" so you don't have to write the same logic over and over.
 ---
-## Challenge: The "Temperature Analyzer"
+## Challenge: The "Currency Converter Function"
 ### Problem Statement:
-You are given a list of daily high temperatures for a week. You need to write a program that analyzes this data to help a gardener decide if their plants are safe.
-**Your script should:**
-1. **Loop** through the list of temperatures.
-2. **Count** how many days were "Freezing" (below **32°F**).
-3. **Find** the highest temperature in the list.
-4. **Print** both the count of freezing days and the max temperature.
+Imagine you are building a travel app. You need a function that converts **USD** to **Euros**, but it also needs to subtract a small **transaction fee**.
+**Your task:**
+Create a function called `convert_currency` that:
+1. Takes two **parameters**: `amount` (USD) and `rate` (the exchange rate).
+2. Calculates the converted amount: .
+3. Subtracts a **flat fee of ** from the final result.
+4. **Returns** the final value.
 ### Constraints:
-* **Input:** A list of integers, e.g., `temps = [35, 28, 40, 31, 30, 45, 50]`
-* **Output:** A message like: *"There were 3 freezing days. The weekly high was 50."*
+* If the result of the conversion is less than , the function should return `0` (because the fee covers the whole amount).
+* You must use the `return` keyword.
 ---
-### Key Concepts to Use:
-* **For Loops:** To look at each number in the list one by one.
-* **Counters:** A variable (like `count = 0`) that you increment inside the loop using `count = count + 1`.
-* **Comparison Logic:** Using `>` or `<` inside an `if` statement to compare the current temperature to your "max" variable.
-### Tips for Success:
-* To find the "Max" without using built-in shortcuts, create a variable called `highest` and set it to the first number in the list. Every time you find a number bigger than `highest`, update it
-* Python's indentation is critical—make sure your `if` statements are indented inside your `for` loop.
+### Example Test Cases:
+```python
+# Calling your function should look like this:
+print(convert_currency(100, 0.92))  # Expected: 90.0 (100 * 0.92 - 2)
+print(convert_currency(1, 0.92))    # Expected: 0    (Conversion is less than 2)
+```
+### Why this is the "Next Level":
+* **Scope:** Variables created inside a function stay inside the function.
+* **Return vs. Print:** This is a common point of confusion. `print()` shows a value to the human, but `return` gives the value back to the computer to use in other calculations.
 ---
